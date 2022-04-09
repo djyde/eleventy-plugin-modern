@@ -1,10 +1,12 @@
 ---
 layout: doc
-title: eleventy-plugin-modern
+title: Home
 ---
 
 An eleventy plugin with modern features.
 
 ## Features
 
-- PostCSS support
+- [PostCSS support](/doc/postcss)
+- [Syntax Highlight](/doc/syntax-highlight)
+

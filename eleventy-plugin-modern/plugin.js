@@ -1,6 +1,11 @@
 const postcss = require("postcss");
 const postcssrc = require("postcss-load-config");
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+
 module.exports = (eleventyConfig) => {
+  // syntax highlight
+  eleventyConfig.addPlugin(syntaxHighlight);
+  
   // postcss
   eleventyConfig.addWatchTarget("./styles/");
   eleventyConfig.addTemplateFormats("css");

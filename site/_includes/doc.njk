@@ -3,7 +3,7 @@
 {% block body %}
 
   <div class="">
-    <header class="fixed top-0 left-0 right-0 h-14 shadow flex items-center px-4">
+    <header class="fixed top-0 left-0 right-0 h-14 shadow flex items-center px-4 bg-white">
       <span class="font-bold text-lg text-gray-700">
         {{ config.title }}
       </span>
@@ -22,7 +22,7 @@
         {{ title }}
       </h1>
       {% endif %}
-      
+
       {{ content | safe }}
     </div>
   </div>

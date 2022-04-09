@@ -8,6 +8,14 @@
     {
       "title": "Installation",
       "url": "/doc/installation"
+    },
+    {
+      "title": "PostCSS",
+      "url": "/doc/postcss"
+    },
+    {
+      "title": "Syntax Highlight",
+      "url": "/doc/syntax-highlight"
     }
   ]
 }

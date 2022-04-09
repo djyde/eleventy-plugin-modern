@@ -1,0 +1,29 @@
+{% extends "./_partials/layout.njk" %}
+
+{% block body %}
+
+  <div class="">
+    <header class="fixed top-0 left-0 right-0 h-14 shadow flex items-center px-4">
+      <span class="font-bold text-lg text-gray-700">
+        {{ config.title }}
+      </span>
+    </header>
+    <nav class="fixed top-14 bottom-0 left-0 w-96 p-4 py-12 overflow-scroll">
+      {% for navItem in config.nav %}
+        <div class="my-1">
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </div>
+      {% endfor %}
+    </nav>
+
+    <div class="ml-96 p-4 py-12 prose mt-14">
+      {% if title %}
+      <h1>
+        {{ title }}
+      </h1>
+      {% endif %}
+      
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}

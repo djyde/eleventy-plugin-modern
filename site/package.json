@@ -5,8 +5,9 @@
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^1.0.0",
+		"@tailwindcss/typography": "^0.5.2",
 		"autoprefixer": "^10.4.4",
-		"tailwindcss": "^3.0.23",
-		"eleventy-plugin-modern": "workspace:*"
+		"eleventy-plugin-modern": "workspace:*",
+		"tailwindcss": "^3.0.23"
 	}
 }

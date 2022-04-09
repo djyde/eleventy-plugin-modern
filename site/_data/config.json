@@ -1,0 +1,13 @@
+{
+  "title": "eleventy-plugin-modern",
+  "nav": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Installation",
+      "url": "/doc/installation"
+    }
+  ]
+}

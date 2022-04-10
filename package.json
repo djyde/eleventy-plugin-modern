@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"build": "pnpm i && pnpm run build --filter site"
+	},
+	"dependencies": {
+		"pnpm": "^6.32.6"
+	}
+}

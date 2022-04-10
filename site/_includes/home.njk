@@ -1,0 +1,12 @@
+{% extends "_partials/layout.njk" %}
+
+{% block body %}
+  <div class="container mx-auto prose py-12 sm:py-24 px-6 sm:px-0">
+    {{ content | safe }}
+
+    <footer class="py-12 text-sm text-center">
+    Made with 💖 by <a href="https://twitter.com/randyloop">@Randy</a>
+    </footer>
+  </div>
+
+{% endblock %}

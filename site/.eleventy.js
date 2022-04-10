@@ -1,5 +1,9 @@
-const modern = require('eleventy-plugin-modern')
+const modern = require("eleventy-plugin-modern");
 
-module.exports = eleventyConfig => {
-  eleventyConfig.addPlugin(modern)
-}
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(modern({
+    markdownOptions: {
+      html: true
+    }
+  }));
+};

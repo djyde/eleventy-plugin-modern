@@ -15,6 +15,10 @@ module.exports = (options) => (eleventyConfig) => {
 
   })
 
+  if (options.markdownIt) {
+    options.markdownIt(md)
+  }
+
   eleventyConfig.setLibrary("md", md);
 
   // syntax highlight

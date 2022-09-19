@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-modern",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "plugin.js",
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",

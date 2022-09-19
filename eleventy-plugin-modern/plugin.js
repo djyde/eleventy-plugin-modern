@@ -3,20 +3,20 @@ const postcssrc = require("postcss-load-config");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdown = require("markdown-it");
 module.exports = (options) => (eleventyConfig) => {
-  const defaultOptions = options || {};
+  const defaultOptions = {
+    ...(options || {})
+  };
 
   // markdown
   const markdownOptions = {
     linkify: true,
     ...defaultOptions.markdownOptions,
   };
-  const md = markdown(markdownOptions)
-  md.use(require('markdown-it-anchor'), {
+  const md = markdown(markdownOptions);
+  md.use(require("markdown-it-anchor"), {});
 
-  })
-
-  if (options.markdownIt) {
-    options.markdownIt(md)
+  if (defaultOptions.markdownIt) {
+    defaultOptions.markdownIt(md);
   }
 
   eleventyConfig.setLibrary("md", md);
